@@ -1,6 +1,11 @@
 import React, { useState, useRef } from 'react';
 import Windows from './components/Windows/'
+import './styles.scss'
 import data from './data.js'
+
+const Github = () => {
+   return <a className={"link"} href="https://github.com/axmz/react-compose-windows.git">github</a>
+}
 
 const App = () => {
    const [windows, setWindows] = useState([])
@@ -25,7 +30,8 @@ const App = () => {
    }
 
    return (
-      <div style={{fontFamily:"arial"}}>
+      <div style={{ fontFamily: "arial" }}>
+         <Github />
          <h1>Gmail-like windows.</h1>
          <p>It is a React Portal, attach it to #windows-root.</p>
          <p>Pls adjust styles to your needs.</p>
