@@ -6,6 +6,8 @@
   "homepage": "http://axmz.github.io/react-compose-windows",
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "webpack --mode production"
   },
   "author": "",
