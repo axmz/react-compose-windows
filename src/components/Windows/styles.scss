@@ -1,0 +1,13 @@
+#windows-root {
+    position: fixed;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    height: 3rem;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; // here you can position windows right or left
+    background-color: transparent;
+}
